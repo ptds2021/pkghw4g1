@@ -1,6 +1,6 @@
 #' @title Estimate area function
 #'
-#' @authors Corinne & Laurène
+#' @authors Corinne & Laurene
 #'
 #' @param x A non-null positive integer
 #'
@@ -64,7 +64,7 @@ estimate_area <- function(B = 5000, seed = 10){
 
 #' @title Plot area function
 #'
-#' @authors Corinne & Laurène
+#' @authors Corinne & Laurene
 #'
 #' @param x a list provided by estimate_area() function
 #'
