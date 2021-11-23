@@ -1,6 +1,14 @@
-# create estimate_area function
-#-------------------------------------------------------------------------------
-
+#' @title Estimate area function
+#'
+#' @authors Corinne & Laurène
+#'
+#' @param x A non-null positive integer
+#'
+#' @return Print a list with the area estimation and the points
+#'
+#' @example estimate_area(100)
+#'
+#' @export
 estimate_area <- function(B = 5000, seed = 10){
 
   if(!is.numeric(B) | B <= 0){  # TO MODIFY
@@ -54,9 +62,19 @@ estimate_area <- function(B = 5000, seed = 10){
 }
 
 
-# create plot.area function
-#-------------------------------------------------------------------------------
-
+#' @title Plot area function
+#'
+#' @authors Corinne & Laurène
+#'
+#' @param x a list provided by estimate_area() function
+#'
+#' @return plot the estimated area and its points
+#'
+#' @example
+#' rval <- estimate_area(100)
+#' plot.area(rval)
+#'
+#' @export
 plot.area <- function(x) {
 
   if(class(x) != "area"){
