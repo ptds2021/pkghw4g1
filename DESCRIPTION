@@ -9,8 +9,8 @@ Aëllya Monney,
 Visesa Jain 
 Maintainer: Aëllya Monney <aellya.monney@unil.ch> , 
 Rémy Tombola <remy.tombola@unil.ch>
-Description: Contains two functions, one to estimate the area and the other to plot 
-the results. 
+Description: Contains two functions, one to estimate the area and the other to 
+plot the results. 
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
