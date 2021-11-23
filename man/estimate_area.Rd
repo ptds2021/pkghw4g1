@@ -7,11 +7,17 @@
 estimate_area(B = 5000, seed = 10)
 }
 \arguments{
-\item{x}{A non-null positive integer}
+\item{B}{a non-null positive integer}
+
+\item{seed}{an integer or NULL}
 }
 \value{
-Print a list with the area estimation and the points
+Print a list with the area estimation and its points
 }
 \description{
 Estimate area function
+}
+\examples{
+estimate_area(100)
+
 }

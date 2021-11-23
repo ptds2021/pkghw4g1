@@ -2,11 +2,13 @@
 #'
 #' @authors Corinne & Laurene
 #'
-#' @param x A non-null positive integer
+#' @param B a non-null positive integer
+#' @param seed an integer or NULL
 #'
-#' @return Print a list with the area estimation and the points
+#' @return Print a list with the area estimation and its points
 #'
-#' @example estimate_area(100)
+#' @examples
+#' estimate_area(100)
 #'
 #' @export
 estimate_area <- function(B = 5000, seed = 10){
@@ -27,8 +29,8 @@ estimate_area <- function(B = 5000, seed = 10){
   set.seed(seed)         # to reproduce the example
 
   # Points simulation
-  points <- data.frame(x = runif(n = B, min = 0, max = 1),
-                       y = runif(n = B, min = 0, max = 1),
+  points <- data.frame(x = stats::runif(n = B, min = 0, max = 1),
+                       y = stats::runif(n = B, min = 0, max = 1),
                        inside = rep(NA, B)    # logical column: T if point inside shape, F if not
   )
 
@@ -68,14 +70,14 @@ estimate_area <- function(B = 5000, seed = 10){
 #'
 #' @param x a list provided by estimate_area() function
 #'
-#' @return plot the estimated area and its points
+#' @return Return a plot of the estimated area and its points
 #'
-#' @example
+#' @examples
 #' rval <- estimate_area(100)
-#' plot.area(rval)
+#' plot_area(rval)
 #'
 #' @export
-plot.area <- function(x) {
+plot_area <- function(x) {
 
   if(class(x) != "area"){
     stop("X has to be of class area for this function.")
@@ -90,19 +92,39 @@ plot.area <- function(x) {
            '#4cc2c233')  # blue
 
   # Plot graph with square and shape S
-  par(pin=c(3.5,3.5)) # to have a square plot
+  graphics::par(pin=c(3.5,3.5)) # to have a square plot
   plot(NA,
        xlim = c(-0.1,1.1), # set x and y axis
        ylim = c(-0.1,1.1),
        xlab = "x",
        ylab = "y")
+  ### create a function to draw square
+  make_square <- function() {
+    graphics::rect(0,0,1,1,              # set positions of: xleft, ybottom, xright, ytop
+         border = "darkblue")
+  }
   make_square()       # plot square with created function
-  grid()
+  graphics::grid()
   for (i in 1:B){
     points(points[i,1], points[i,2], pch=20, col=cols[1 + (points[i,3])])
 
   }
-
+  ### create a function to draw shape S
+  make_shape = function(bottom = c(0.5,0), col = "darkblue", fill = NULL){
+    x <- 1
+    y <- 1
+    graphics::lines(bottom + 0.5, bottom, col = col) # D3: y > x - 0.5
+    graphics::curve(expr = (sqrt(-(x^2) + 0.5^2)), # D1: (x^2)+(y^2)>0.5^2
+          from = c(0, 0.5), #from & to are to limit the area of the curve to the rectangle
+          to = c(1, 0.5),
+          col = col, #set color of the curve
+          add = TRUE) #curve should be added to the existing plot
+    graphics::curve(expr = (sqrt(0.5^2 - (x-0.5)^2) + 0.5), # D2: (x-0.5)^2 +(y-0.5)^2) < 0.5^2
+          from = c(0, 0.5), #from & to are to limit the area of the curve to the rectangle
+          to = c(1, 0.5),
+          col = col, #set color of the curve
+          add = TRUE) #curve should be added to the existing plot
+  }
   make_shape()        # plot shape with created function
   # add grid on the plot
 }
