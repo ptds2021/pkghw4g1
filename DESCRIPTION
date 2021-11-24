@@ -5,6 +5,7 @@ Version: 0.1.0
 Author: Corinne Schönholzer, Laurène Hsieh, Rémy Tombola, Aëllya Monney, Visesa Jain
 Maintainer: Aëllya Monney <aellya.monney@unil.ch> , Rémy Tombola <remy.tombola@unil.ch>
 Description: Contains two functions, one to estimate the area and the other to plot the results. 
+Imports: shiny (>= 1.7.1)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
