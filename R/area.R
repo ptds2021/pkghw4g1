@@ -1,6 +1,6 @@
 #' @title Estimate area function
 #'
-#' @authors Corinne & Laurene
+#' @author Corinne & Laurene
 #'
 #' @param B a non-null positive integer
 #' @param seed an integer or NULL
@@ -66,7 +66,7 @@ estimate_area <- function(B = 5000, seed = 10){
 
 #' @title Plot area function
 #'
-#' @authors Corinne & Laurene
+#' @author Corinne & Laurene
 #'
 #' @param x a list provided by estimate_area() function
 #'
@@ -92,7 +92,7 @@ plot_area <- function(x) {
            '#4cc2c233')  # blue
 
   # Plot graph with square and shape S
-  graphics::par(pin=c(3.5,3.5)) # to have a square plot
+  graphics::par(pin=c(3,3)) # to have a square plot
   plot(NA,
        xlim = c(-0.1,1.1), # set x and y axis
        ylim = c(-0.1,1.1),

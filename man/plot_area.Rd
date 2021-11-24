@@ -20,3 +20,6 @@ rval <- estimate_area(100)
 plot_area(rval)
 
 }
+\author{
+Corinne & Laurene
+}

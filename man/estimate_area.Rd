@@ -21,3 +21,6 @@ Estimate area function
 estimate_area(100)
 
 }
+\author{
+Corinne & Laurene
+}
