@@ -15,10 +15,10 @@ shinyUI(fluidPage(
     # Sidebar with a slider input for number of bins
     sidebarLayout(
         sidebarPanel(
-            numericInput("seed",
+            numericInput(inputId = "seed",
                          label = "Set a Seed:",
                          value = 10),
-            sliderInput("B", ...,
+            sliderInput(inputId = "B",
                         label = "Set the number of points to be simulated:",
                         min = 1,
                         max = 1000000,
