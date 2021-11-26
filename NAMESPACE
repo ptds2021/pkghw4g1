@@ -2,3 +2,4 @@
 
 export(estimate_area)
 export(plot_area)
+export(runDemo)

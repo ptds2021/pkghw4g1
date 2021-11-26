@@ -1,3 +1,6 @@
+#' @title Estimate area function
+#'
+#' @author Corinne & Laurene
 #' @export
 runDemo <- function() {
   appDir <- system.file("shiny-examples", "area", package = "pkghw4g1")
@@ -11,3 +14,4 @@ runDemo <- function() {
   shiny::runApp(appDir, display.mode = "normal")
 
 }
+
