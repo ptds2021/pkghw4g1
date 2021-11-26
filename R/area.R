@@ -13,7 +13,7 @@
 #' @export
 estimate_area <- function(B = 5000, seed = 10){
 
-  if(!is.numeric(B) | B <= 0){
+  if(B%%1 !=0 | B <= 0){
     stop("B must be a non-null positive integer")
   }
 
@@ -21,7 +21,7 @@ estimate_area <- function(B = 5000, seed = 10){
     stop("B must be a non-null positive integer") #stop the function and return message
   }
 
-  if(!is.numeric(seed)){ #to check whether user inputs a correct value for the seed
+  if(seed %%1 !=0){ #to check whether user inputs a correct value for the seed
     stop("The seed must be an integer or NULL") #stop the function and return message
   }
 
