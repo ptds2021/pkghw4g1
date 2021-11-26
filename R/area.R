@@ -13,8 +13,8 @@
 #' @export
 estimate_area <- function(B = 5000, seed = 10){
 
-  if(!is.numeric(B) | B <= 0){  # TO MODIFY
-    stop("B must be a non-null positive integer") # TO MODIFY
+  if(!is.numeric(B) | B <= 0){
+    stop("B must be a non-null positive integer")
   }
 
   if(is.matrix(B)){ #to check whether user inputs a matrix for B
@@ -73,8 +73,8 @@ estimate_area <- function(B = 5000, seed = 10){
 #' @return Return a plot of the estimated area and its points
 #'
 #' @examples
-#' rval <- estimate_area(100)
-#' plot_area(rval)
+#'x <- estimate_area(100)
+#' plot_area(x)
 #'
 #' @export
 plot_area <- function(x) {
