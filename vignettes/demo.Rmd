@@ -13,7 +13,11 @@ vignette: >
 2. **plot_area()** to plot the results
 ```{r, warning = FALSE}
 library(pkghw4g1)
-x <- estimate_area(5000)
+x <- estimate_area(B = 2000, seed = 10)
 plot_area(x)
 
 ```
+
+###  This is the shiny application that allows to simulate different points and plot them
+![](shiny_demo.png){width=150%}
+
