@@ -16,8 +16,8 @@ Return a plot of the estimated area and its points
 Plot area function
 }
 \examples{
-rval <- estimate_area(100)
-plot_area(rval)
+x <- estimate_area(100)
+plot_area(x)
 
 }
 \author{
