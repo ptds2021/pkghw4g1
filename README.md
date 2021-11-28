@@ -1,5 +1,5 @@
 # pkghw4g1
-<img src="man/figures/logo.png" align="right" />
+<img src="man/figures/logo.png" align="center" />
  
  
 This package was created for the course of Programming Tools in Data Science (HEC Lausanne)
