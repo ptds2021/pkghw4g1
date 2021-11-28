@@ -1,14 +1,14 @@
 ---
 title: "Vignette Pkghw4g1"
-author: Aëlly Monney, Rémy Tombola
-date: "`r Sys.Date()`"
+author: Aëlly Monney, Rémy Tombola, Visesa Jain
+date: "`r Sys.time()`"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{demo}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
-###  This is the library `pkghw4g1` and it contains two functions :
+###  This is the library `pkghw4g1` and it contains the following two functions :
 1. **estimate_area()** to estimate the area 
 2. **plot_area()** to plot the results
 ```{r, warning = FALSE}
