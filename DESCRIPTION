@@ -2,7 +2,11 @@ Package: pkghw4g1
 Type: Package
 Title: Area estimator package
 Version: 0.1.0
-Authors@R: person("Corinne", "Schönholzer",role = c("aut", "cre"), email = "jmichaelrosenberg@gmail.com")
+Authors@R: c(person("Laurène", "Hsieh", email = "laurene.hsieh@unil.ch",role = c("aut","cre")),
+             person("Corinne", "Schönholzer", email = "corinne.Schonholzer@unil.ch",role = "aut"),
+             person("Aëllya", "Monney", email = "aellya.monney@unil.ch",role = "aut"),
+             person("Rémy", "Tombola", email = "remy.tombola@unil.ch",role = "aut"),
+             person("Visesa", "Jain", email = "visesa.jain@unil.ch",role = "ctb"))
 Maintainer: Aëllya Monney <aellya.monney@unil.ch> , Rémy Tombola <remy.tombola@unil.ch>
 Description: Contains two functions, one to estimate the area and the other to plot the results. 
 Imports: shiny (>= 1.7.0)
