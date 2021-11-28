@@ -92,7 +92,7 @@ plot_area <- function(x) {
            '#4cc2c233')  # blue
 
   # Plot graph with square and shape S
-  graphics::par(pin=c(3,3)) # to have a square plot
+  graphics::par(pin=c(1,1)) # to have a square plot
   plot(NA,
        xlim = c(-0.1,1.1), # set x and y axis
        ylim = c(-0.1,1.1),

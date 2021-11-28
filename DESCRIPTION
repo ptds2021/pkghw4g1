@@ -2,7 +2,7 @@ Package: pkghw4g1
 Type: Package
 Title: Area estimator package
 Version: 0.1.0
-Author: Corinne Schönholzer, Laurène Hsieh, Rémy Tombola, Aëllya Monney, Visesa Jain
+Authors@R: person("Corinne", "Schönholzer",role = c("aut", "cre"), email = "jmichaelrosenberg@gmail.com")
 Maintainer: Aëllya Monney <aellya.monney@unil.ch> , Rémy Tombola <remy.tombola@unil.ch>
 Description: Contains two functions, one to estimate the area and the other to plot the results. 
 Imports: shiny (>= 1.7.0)
