@@ -1,6 +1,10 @@
+pandoc: 2.7.3
+pkgdown: 1.6.1
+pkgdown_sha: ~
+articles:
+  demo: demo.html
+last_built: 2021-11-28T15:46Z
 urls:
   reference: https://ptds2021.github.io/pkghw4g1/index.html/reference
   article: https://ptds2021.github.io/pkghw4g1/index.html/articles
-articles:
-  demo: demo.html
 

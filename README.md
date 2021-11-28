@@ -1,5 +1,5 @@
 # pkghw4g1
-<img src="man/figures/logo.png" align="center" />
+<img src="https://seekvectorlogo.com/wp-content/uploads/2019/07/unil-universite-de-lausanne-vector-logo.png" align="center" />
  
  
 This package was created for the course of Programming Tools in Data Science (HEC Lausanne)
