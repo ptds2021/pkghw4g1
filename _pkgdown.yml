@@ -1,5 +1,11 @@
 url: https://ptds2021.github.io/pkghw4g1/index.html
 template:
  package: preferably
-
-
+navbar:
+ right:
+    - icon: fa-github fa-lg
+      text: "github"
+      href: https://github.com/ptds2021/pkghw4g1
+left:
+    - icon: fa-home
+      href: index.html
